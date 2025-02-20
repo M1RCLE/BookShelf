@@ -22,14 +22,6 @@
 		AE7133B22D6759AF00E0C657 /* BookShelf */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BookShelf; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		AE7133B42D6759AF00E0C657 /* BookShelf */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BookShelf;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
-
 /* Begin PBXFrameworksBuildPhase section */
 		AE7133AF2D6759AF00E0C657 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -44,7 +36,7 @@
 		AE7133A92D6759AF00E0C657 = {
 			isa = PBXGroup;
 			children = (
-				AE7133B42D6759AF00E0C657 /* BookShelf */,
+				AE7134362D676E2800E0C657 /* BookShelfProject */,
 				AE7133B32D6759AF00E0C657 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +47,13 @@
 				AE7133B22D6759AF00E0C657 /* BookShelf */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AE7134362D676E2800E0C657 /* BookShelfProject */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BookShelfProject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +70,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				AE7133B42D6759AF00E0C657 /* BookShelf */,
 			);
 			name = BookShelf;
 			packageProductDependencies = (
