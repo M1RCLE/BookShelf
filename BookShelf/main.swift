@@ -1,11 +1,8 @@
-//
-//  main.swift
-//  BookShelf
-//
-//  Created by Michael Shindarev on 20.02.2025.
-//
-
 import Foundation
+import os
 
-print("Hello, World!")
+let logger = Logger()
 
+let controller = BookShelfController()
+
+controller.start()
