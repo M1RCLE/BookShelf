@@ -31,9 +31,6 @@ extension BookRepository: BookRepositoryProtocol {
     }
     
     mutating func deleteBook(bookId: UUID) -> Bool {
-        // мб так было бы лучше
-        // return books.removeValue(forKey: book.id) != nil
-        
         if (!contains(lookForId: bookId)) {
             logger.info("Book with id = \(bookId) is missing")
             return false

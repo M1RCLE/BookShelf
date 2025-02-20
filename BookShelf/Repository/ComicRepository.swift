@@ -27,9 +27,6 @@ extension ComicRepository : ComicRepositoryProtocol {
     }
     
     mutating func deleteComic(comicId: UUID) -> Bool {
-        // мб так было бы лучше
-        // return comic.removeValue(forKey: book.id) != nil
-        
         if (!contains(lookForId: comicId)) {
             logger.info("Book with id = \(comicId) is missing")
             return false

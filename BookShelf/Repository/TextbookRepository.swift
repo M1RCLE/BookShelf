@@ -25,10 +25,7 @@ extension TextbookRepository : TextbookRepositoryProtocol {
         return true
     }
     
-    mutating func deleteTextbook(textBookId: UUID) -> Bool {
-        // мб так было бы лучше
-        // return comic.removeValue(forKey: book.id) != nil
-        
+    mutating func deleteTextbook(textBookId: UUID) -> Bool {        
         if (!contains(lookForId: textBookId)) {
             logger.info("Book with id = \(textBookId) is missing")
             return false

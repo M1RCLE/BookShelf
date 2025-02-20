@@ -54,7 +54,6 @@ class BookShelfController {
     
 }
 
-// Starter extension
 extension BookShelfController {
     func start() {
         while true {
@@ -120,8 +119,6 @@ extension BookShelfController {
     }
 }
 
-
-// Book repository control flow extension
 extension BookShelfController {
     private func addBook() throws {
         print("Enter Book Title: ", terminator: "")
@@ -135,7 +132,7 @@ extension BookShelfController {
         }
         
         print("Enter Publication Year (or press Enter to skip): ", terminator: "")
-        let publicationYear = Int32(readLine() ?? "") ?? -1  // -1 means no year provided
+        let publicationYear = Int32(readLine() ?? "") ?? -1
         
         print("Enter Genre (fiction, nonFiction, mystery, sciFi, biography): ", terminator: "")
         guard let genreInput = readLine(), let genre = try? BookGenre(rawValue: genreInput) else {
@@ -220,7 +217,6 @@ extension BookShelfController {
     }
 }
 
-// Comic extension
 extension BookShelfController {
     private func addComic() throws {
         print("Enter Comic Title: ", terminator: "")
@@ -239,7 +235,7 @@ extension BookShelfController {
         }
         
         print("Enter Publication Year (or press Enter to skip): ", terminator: "")
-        let publicationYear = Int32(readLine() ?? "") ?? -1 // -1 means no year provided
+        let publicationYear = Int32(readLine() ?? "") ?? -1
         
         let newComic = Comic(_title: title, _author: author, _publicationYear: publicationYear, _issueNumber: issueNumber)
         
@@ -318,7 +314,6 @@ extension BookShelfController {
     }
 }
 
-// ectension for Testbook
 extension BookShelfController {
     private func addTextBook() throws {
         print("Enter Textbook Title: ", terminator: "")
@@ -337,7 +332,7 @@ extension BookShelfController {
         }
         
         print("Enter Publication Year (or press Enter to skip): ", terminator: "")
-        let publicationYear = Int32(readLine() ?? "") ?? -1 // -1 means no year provided
+        let publicationYear = Int32(readLine() ?? "") ?? -1
         
         print("Enter Text Book Genre: ", terminator: "")
         guard let textBookGenreInput = readLine(), let textBookGenre = try? TextBookGenre(rawValue: textBookGenreInput) else {
