@@ -71,7 +71,7 @@ extension BookShelfController {
             print("11. View All Textbook")
             print("12. Search Textbook")
             print("13. Filter by Textbook course number")
-            print("14. Exit program")
+            print("14. Exit")
             print("Choose an option: ", terminator: "")
             
             if let choice = readLine(), let option = Int(choice) {
