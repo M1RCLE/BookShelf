@@ -20,6 +20,19 @@
 
 /* Begin PBXFileReference section */
 		AE7133B22D6759AF00E0C657 /* BookShelf */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BookShelf; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE7134492D676E5C00E0C657 /* BookShelfController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookShelfController.swift; sourceTree = "<group>"; };
+		AE71344B2D676E5C00E0C657 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		AE71344C2D676E5C00E0C657 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		AE71344D2D676E5C00E0C657 /* BookGenre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookGenre.swift; sourceTree = "<group>"; };
+		AE71344E2D676E5C00E0C657 /* Comic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
+		AE71344F2D676E5C00E0C657 /* TextBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBook.swift; sourceTree = "<group>"; };
+		AE7134502D676E5C00E0C657 /* TextBookGenre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBookGenre.swift; sourceTree = "<group>"; };
+		AE7134522D676E5C00E0C657 /* BookRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRepositoryProtocol.swift; sourceTree = "<group>"; };
+		AE7134532D676E5C00E0C657 /* ComicRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicRepositoryProtocol.swift; sourceTree = "<group>"; };
+		AE7134542D676E5C00E0C657 /* TextbookRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextbookRepositoryProtocol.swift; sourceTree = "<group>"; };
+		AE7134562D676E5C00E0C657 /* BookRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRepository.swift; sourceTree = "<group>"; };
+		AE7134572D676E5C00E0C657 /* ComicRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicRepository.swift; sourceTree = "<group>"; };
+		AE7134582D676E5C00E0C657 /* TextbookRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextbookRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +65,53 @@
 		AE7134362D676E2800E0C657 /* BookShelfProject */ = {
 			isa = PBXGroup;
 			children = (
+				AE71344A2D676E5C00E0C657 /* Controller */,
+				AE71344B2D676E5C00E0C657 /* main.swift */,
+				AE7134592D676E5C00E0C657 /* Repository */,
 			);
 			path = BookShelfProject;
+			sourceTree = "<group>";
+		};
+		AE71344A2D676E5C00E0C657 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AE7134492D676E5C00E0C657 /* BookShelfController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AE7134512D676E5C00E0C657 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				AE71344C2D676E5C00E0C657 /* Book.swift */,
+				AE71344D2D676E5C00E0C657 /* BookGenre.swift */,
+				AE71344E2D676E5C00E0C657 /* Comic.swift */,
+				AE71344F2D676E5C00E0C657 /* TextBook.swift */,
+				AE7134502D676E5C00E0C657 /* TextBookGenre.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		AE7134552D676E5C00E0C657 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				AE7134522D676E5C00E0C657 /* BookRepositoryProtocol.swift */,
+				AE7134532D676E5C00E0C657 /* ComicRepositoryProtocol.swift */,
+				AE7134542D676E5C00E0C657 /* TextbookRepositoryProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		AE7134592D676E5C00E0C657 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				AE7134512D676E5C00E0C657 /* Entity */,
+				AE7134552D676E5C00E0C657 /* Protocol */,
+				AE7134562D676E5C00E0C657 /* BookRepository.swift */,
+				AE7134572D676E5C00E0C657 /* ComicRepository.swift */,
+				AE7134582D676E5C00E0C657 /* TextbookRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
